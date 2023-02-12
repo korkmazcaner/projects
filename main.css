@@ -1,0 +1,197 @@
+.logo{
+    background-image:url("karmaslogo.jpg") ;
+    height: 120px;
+    width: 300px; 
+    background-repeat: no-repeat;
+    background-size: contain; /*arka plan resmi divin boyuna uygun haline getirir*/
+
+}
+
+.topbar{ /*en üstüdeki menü genelde*/
+    display: flex; /* divleri yan yana hizalama yönetimi*/
+    justify-content: space-between; /* flexin içindeki divleri sağa ve sola dağıtır. */
+    align-items: center; /* flexin içindeki elemanları dikeyde ortalama */
+}
+
+a { /*a link demektir*/
+    text-decoration: none;/*yazılarından alt çizgi kaldırma*/
+
+}
+
+body {
+    font-family: sans-serif;
+}
+.menu a { /*menü'nün içindeki linkler*/
+    color: black;
+    
+}
+
+.menu{
+    display: flex; /*menü linkleri arasındaki boşulları ayırmak için*/
+    column-gap: 30px;/*flexin elemanları arasındaki boşluk bırakmak için*/
+
+}
+
+.hero{
+    display: flex;/*içindeki resimleri hizalama için*/
+    flex-wrap: wrap;/* resimlerin satır atlayabilmesi için*/
+    max-width: 640px;/*toplam alanın genişliğini sınırlandırmak için*/
+    margin-left: auto;/*hero alanını ortalamak için*/
+    margin-right: auto;/*hero alanını ortalamak için*/
+
+
+    
+}
+
+.image-wrapper{ /*arka plan olacak resimlerin özellikleri*/
+    background-size: cover;/*resimin divi tamamen doldurmasını sağlar*/
+   
+
+}
+
+.image-1{
+    background-image: url("plane.jpg"); /*arkada plana resmi oturtmak için*/
+    height: 300px;
+    width: 100%;
+    background-position: center 30%; 
+}
+
+.image-2{
+    background-image: url("ship.webp");
+    height: 180px;
+    width: 50%;
+}
+
+
+.image-3{
+    background-image: url("road.webp");
+    height: 180px;
+    width: 50%;
+    background-position: center 20%;
+}
+
+
+.alt-bilgi {
+    text-align: center;
+    font-family: sans-serif;
+    color: black;
+    display: flex;
+    column-gap: 30px;
+    margin-left: auto;/*hero alanını ortalamak için*/
+    margin-right: auto;/*hero alanını ortalamak için*/
+    font-size: 14px;
+    padding: 30px;/*hücre içi boşluk vermiş olduk */
+    margin: 30px;/*hücre dışı boşluk vermiş olduk */
+    
+
+}
+
+.image-karisik {
+    background-image: url("karisik.jpg");
+    height: 80px;
+    width: 50%;
+    margin-left: auto;/*hero alanını ortalamak için*/
+    margin-right: auto;/*hero alanını ortalamak için*/
+    margin-bottom: 30px;
+    
+
+}
+
+.third{
+    
+    display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+  padding: 50px;/*hücre dışı boşluk vermiş olduk */
+  color: black;
+  
+
+
+}
+
+.third a{
+
+    color: black;
+}
+
+.iletisim {
+
+    list-style-type: none; /*listelerin yanındaki nokta ve rakamları kaldırır*/
+
+}
+
+.oneri {
+    display: flex; 
+    align-items: center;/*dikeyde yazıyı ortalama için*/
+}
+
+.profili{
+    
+    max-width: 960px; /*genişlik*/
+    margin: 90px auto 0; /*sadece margin yazıldığından ilk üst, ikincisi sağ-sol, üçüncüsü alt*/
+    font-size: 14px;
+    
+
+
+
+
+}
+
+.normal-heading {
+    font-weight: normal;
+}
+
+
+
+.grid{
+
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 204px 204px 204px; /*kolonların sayısı ve genişliği*/
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 50px;
+    
+
+}
+
+.grid-item{
+    
+    
+    border: 1px grey solid;
+    padding: 2px;
+    
+}
+
+
+.image-clip{
+
+    clip: rect(0px,200px,133px,0px);
+}
+
+
+h2 {
+
+    font-size: 18px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.ucak-1 {
+    margin: 30px auto;
+    display: block;
+
+
+
+}
+
+.hizmetler {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.map{
+    width: 640px;
+    height: 480px;
+
+}
